@@ -1,0 +1,1446 @@
+/********************************************
+									
+			Contact Main Page	
+								
+********************************************/
+ #advanceSearchDiv{
+    margin-top:6px;
+	margin-right:122px;
+    position: relative;
+    width: 306px;
+/*    z-index: 1;*/
+	cursor:pointer;
+	.margin-right:115px;
+}
+ #advanceSearchDiv a{
+	border:none;
+}
+.importcx
+{
+    color: #5aa3b6;; 
+    padding-left: 10px; 
+    font-size: 14px;
+    margin-top: 9px; 
+    font-weight:bold;
+}
+.importcolor
+{
+    
+   background: url("/assets/policies/dwniconnormal.png") no-repeat scroll 0 2px transparent; 
+   color: #4296B0; 
+   padding: 0 0 0 11px;
+    
+}
+
+.exportmenuText{
+    position: relative;
+    top: 4px;
+    margin-left: 10px;
+    cursor:pointer;
+
+}
+ #advanceSearchDiv .ad_textbox{
+    background:#F7F9F8;
+	width:387px;
+	padding:3px;
+	border:1px solid #CDE0E6;
+	.padding-bottom:0px;
+}
+ #advanceSearchDiv .textbox{
+    background:#F7F9F8;
+	width: 357px;
+	height: 18px;
+	border:none;
+	margin-top:1px;
+	margin-left:2px;
+	.margin-top:3px;
+	.height: 18px;
+	color:#999999;
+	float:left;
+}
+ #advanceSearchDiv .set_search_icon{
+    margin-left:8px;
+    margin-top: 0px;
+    position: absolute;
+	width:20px;
+}
+ #advanceSearchDiv .lt_search{
+	float:left;
+	display:inline-block;
+}
+
+.contactlist .topContactText{
+    background:#f0f6f8;
+    border:1px solid #E9EDEE;
+    border-left:none;
+    border-right:none;
+    height:33px;
+}
+.contactlist .topContact{
+	/*padding:0 0 0 20px;*/
+	width:20px;
+}
+.contactlist .contactTxt{
+	display:inline-block;
+	position:relative;
+	top:-1px;
+	/*left:4px;*/
+	left:0px;
+    color:#5aa3b6;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+}
+.contactlist .contactListContainer{
+	background:#F6F8F8;
+	/*height:820px;
+	overflow-y:auto;*/
+	border:1px solid #F6F8F8;
+}
+.contactlist .contactListContainer .list{
+	/*width:22%;*/
+	display:inline-block;
+	float:left;
+	padding: 15px 5px;
+}
+/* Off state for a ARC checkbox */
+.contactlist .altCheckboxOff {
+    display: inline-block;
+    background: url('/assets/provider_event_list/pro_checkbox_normal.png') no-repeat;
+    width:19px;
+    height:21px;
+    cursor: pointer;
+}
+/* On state for a ARC checkbox */
+.contactlist  .altCheckboxOn {
+    display: inline-block;
+    background: url('/assets/provider_event_list/pro_checkbox_selected.png')  no-repeat;
+    width:19px;
+    height:21px;
+    cursor: pointer;
+}
+.contactlist .nameText{
+	display:inline-block;
+  	color:#807e7e;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:15px;
+}
+/*.contactlist .contactImg{
+	padding:5px 5px 0px 5px;
+	border:1px solid red;
+	display:block;
+	margin:5px 25px 0 5px;
+	background: none repeat scroll 0 0 #FBFDFE;
+    border: 1px solid #CDE0E6;
+	width:62px;
+	height:57px;
+	position: relative;
+}
+.contactlist .contactImg span{
+  	color:#5AA3B6;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	background:#F2F5F6;
+	display:block;
+	text-align:center;
+	width:62px;
+	height:35px;
+	padding-top:17px;
+	position: relative;
+}
+.contactlist .famNorHov{
+    bottom: -11px;
+    position: absolute;
+    right: -7px;
+}*/
+/*******************************************
+									
+        Add new Contact Page	
+								
+********************************************/
+
+.contactNew .FileUpload {
+    position:relative;
+    margin-top:1px;
+    width: 170px;
+    height: 31px;
+	
+}
+.contactNew .BrowserVisible {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    width:106px;
+    height:27px;	
+}
+.contactNew .FileField {
+	border: 1px solid #CDE0E6;
+    color: #444444;
+    height: 26px;
+    *height:23px;
+    padding: 0 5px;
+    *padding-top:3px;
+    position: relative;
+    width: 457px;
+    word-wrap: break-word;
+    z-index: 3;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.contactNew .BrowserHidden {
+    position:relative;
+    z-index:2;
+	*width:210px;
+    height: 28px;
+
+    -moz-opacity:0;
+    filter:alpha(opacity= 0);
+    opacity: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    font-weight:normal;
+    color: #999999;
+    left: 317px;
+    margin-top: 0px;
+	cursor:pointer;
+	
+}
+.contactNew .browse{
+	color: #FD7D0C;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    margin-left: 467px;
+    position: relative;
+    top: -29px;
+	.margin-top:-1px;
+    width: 53px;
+    z-index: 1;
+	
+}
+
+#contact_container .centerCont{	
+    width: 880px;
+    /*height:100%;*/
+    margin:0 auto;
+}
+#contact_container .paddingTop10{
+    width: 880px;
+    padding-top:10px;
+}
+#contact_container .leftSideField{
+    font-weight:bold;
+    font-size:14px;
+    color:#5a5757;
+    width: 162px;
+    vertical-align:top;
+    margin-top: 8px;
+    margin-left:70px;
+}
+#contact_container .setMarginTop{
+	 height: 40px;
+    margin-top: 36px;
+    position: relative;
+    z-index: 7;
+}
+#contact_container .textbox{
+    display: inline-block;
+    width:535px;
+    height:27px;
+    *height:24px;
+    border:1px solid #CDE0E6;
+    padding:1px 4px 0px 4px;
+    *padding:6px 4px 0px 4px;
+    color: #444444;
+    font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#contact_container .selectBoxCity{
+    display:inline-block;
+    background:url('/assets/create_new_activity/select_box_bg.png') no-repeat;
+    width:545px;
+    height:31px;
+    top:0px;
+    position:relative;
+}
+#contact_container .selectBoxCity .selectDiv{
+    display:inline-block;
+    cursor:default;
+    font-size:13px;
+    color:#959292;
+    position:relative;
+    top:4px;
+    left:7px;
+    width:508px;
+    height:23px;
+    overflow:hidden;
+    padding-left: 0px;
+}
+#contact_container .dropDownDivCity{
+    display:inline-block;
+    font-size:13px;
+    background:#ffffff;
+    color:#959292;
+    border:1px solid #CDE0E6;
+    width:543px;
+    margin-top:-1px;
+    margin-left:0px;
+    position:absolute;
+    z-index:500;
+    /* options are overflow set height and scroll 
+    height:110px;
+    overflow-y:scroll;*/
+}
+#contact_container .dropDownDivCity a{	
+    color:#959292;
+    display:block;
+    text-decoration:none;
+    padding:3px 0px 3px 3px;
+}
+#contact_container .dropDownDivCity a:hover{
+    background:#73C3DD;
+    color:#ffffff;
+}
+#contact_container .buttonDiv{
+    width:880px;
+    padding:18px 0px 10px 0px;
+}
+#contact_container .upload_name{
+	color:#5aa3b6;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+	margin:35px 0 0 15px;
+}
+/* Off state for a ARC checkbox */
+#contact_container .altCheckboxOff {
+    display: inline-block;
+    background: url('/assets/provider_event_list/pro_checkbox_normal.png') no-repeat;
+    width:19px;
+    height:21px;
+    cursor: pointer;
+}
+/* On state for a ARC checkbox */
+#contact_container .altCheckboxOn {
+    display: inline-block;
+    background: url('/assets/provider_event_list/pro_checkbox_selected.png')  no-repeat;
+    width:19px;
+    height:21px;
+    cursor: pointer;
+}
+
+/*******************************************
+									
+        Detail view Contact Page	
+								
+********************************************/
+#contact_container .viewContact{
+	padding:20px 0 0 304px;
+}
+#contact_container .ltText{
+	color:#595758;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+	font-weight:bold;
+	padding-right:15px;
+}
+#contact_container .rtText{
+	color:#595758;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+	padding-left:50px;
+}
+#contact_container .editImage{
+	margin-right:5px;
+}
+#contact_container .errorDiv{
+	margin-top:3px;
+    color:#fc8989;
+    font-size:12px;
+}
+.contactImg{
+	padding:5px 5px 0px 5px;
+	border:1px solid red;
+	display:block;
+	margin:0px 5px 0 79px;
+	background: none repeat scroll 0 0 #FBFDFE;
+    border: 1px solid #CDE0E6;
+	width:62px;
+	height:57px;
+}
+.contactImg span{
+  	color:#5AA3B6;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+	background:#F2F5F6;
+	display:block;
+	text-align:center;
+	width:62px;
+	height:35px;
+	padding-top:17px;
+}
+.contactNameText{
+  	color:#5AA3B6;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:13px;
+	float:left;
+	display:inline-block;
+	}
+.setWidthName{
+	color:#6d6d6d;
+	width:150px;
+	padding:10px 0 0 10px;
+  }
+
+/*******************************************
+									
+        Edit Contact Page	
+								
+********************************************/
+#contact_container .imgBg{
+	background:#FBFDFE;
+	border:1px solid #CDE0E6;
+	width:85px;
+	height:87px;
+}
+#contact_container .imgBg img{
+	 margin: 7px 0 0 6px;
+}
+#contact_container .changeImgText{
+	color: #5099AC;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+	font-weight:bold;
+	padding-left:10px;
+	margin-top:75px;
+}
+  /*******edit activity*********/
+.setImgBorder{
+    position: relative;
+    z-index: 4;
+	width:74px;
+	height:73px;
+	overflow:hidden;
+}
+.upload_name_edit{
+	color: #5AA3B6;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    margin-left: 144px;
+    margin-top: 57px;
+    width: 300px;
+}
+.editContact .FileUpload {
+    position:relative;
+    margin-top:2px;
+    width: 170px;
+    height: 31px;
+  }
+.editContact .BrowserVisible {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    width:106px;
+    height:27px;	
+  }
+.editContact .FileField {
+    color: #999999;
+    display: block;
+    height: 26px;
+    margin: 51px 0 0 142px;
+    padding: 0 5px;
+    position: relative;
+    width: 315px;
+    word-wrap: break-word;
+    z-index: 3;
+	background:#ffffff;
+	border:none;
+}
+.editContact .BrowserHidden {
+    position:relative;
+    z-index:2;
+    height:19px;
+    -moz-opacity:0;
+    filter:alpha(opacity= 0);
+    opacity: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight:normal;
+    color: #999999;
+    margin-top: 57px;
+    left: -239px;
+    width:100px;
+	cursor: pointer;
+	
+	margin-top:53px\9;
+	width:120px\9;
+	font-size: 23px\9;
+	left: 5px\9;
+	.margin-left: 249px\9;
+	
+	.font-size: 21px;
+	.margin-left: -10px;
+	.margin-top: 50px;
+	.height:21px;
+	
+  }
+.editContact .browse{
+    color: #5099AC;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    margin-left: 6px;
+    position: relative;
+    top: -31px;
+    .top:-20px;
+    width: 124px;
+    z-index: 1;
+
+	    top:  -22px\9;
+  }
+  	
+
+
+/*******************************************
+									
+        Delete Contact Page	
+								
+********************************************/
+.deletePopupContainer{
+	display:inline-block;
+    background:url('/assets/global/pop_up_delete/delete_message_popup.png') no-repeat;
+    width:436px;
+    height:244px;
+}
+.deletePopupContainer .p1{
+	color:#010101;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+	padding-top:50px;
+	line-height:22px;
+	margin:0 10px 0 10px;
+}
+.deletePopupContainer .buttons{
+	padding-top:66px;
+}
+/*******************************************
+									
+        Support Form Page	
+								
+********************************************/
+
+.support_form .dot {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+}
+.support_form .selectedMenuText {
+    color: #5AA3B6;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.support_form .menuText {
+    color: #5AA3B6;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+	white-space:nowrap;
+
+}
+.menuboldText {
+    color: #5AA3B6;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    white-space:nowrap;
+
+}
+.required{
+    display: inline-block;
+    color:red;
+    position:relative;
+    left:0px;
+    top:0px;
+    font-size:13px;
+}
+.support_form .FileUpload {
+    height: 31px;
+    margin-top: 14px;
+    position: relative;
+    width: 170px;
+}
+
+.support_form .BrowserHidden {
+    color: #999999;
+    cursor: pointer;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    height: 19px;
+    left: -176px;
+    top: -14px;
+    -moz-opacity:0;
+    filter:alpha(opacity=0);
+    opacity:0;
+    position: relative;
+    width: 100px;
+    z-index: 2;
+	.font-size: 13px;
+	.left: -9px;
+}
+.support_form .BrowserVisible {
+    height: 27px;
+    left: -179px;
+    position: absolute;
+    top: -15px;
+    width: 191px;
+    z-index: 3;
+}
+.support_form .FileField {
+    border: 1px solid #FFFFFF;
+    color: #999999;
+    display: block;
+    height: 26px;
+    margin: -2px 0 0 281px;
+    padding: 0 5px;
+    position: relative;
+    width: 306px;
+    word-wrap: break-word;
+    z-index: 3;
+}
+.support_form .browse {
+    color: #5099AC;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    margin-left: 10px;
+    position: relative;
+    top: -38px;
+    width: 124px;
+    z-index: 1;
+	.top: -36px;
+}
+.support_form .setfeedbackDiv{
+	width:500px;
+	margin:0 auto;
+	margin-top:15px;
+	background:#edf1f2;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#444444;
+	padding:15px;
+}
+.support_form .screenshot_txt{
+    color: #999999;
+    display: inline-block;
+    font-family: arial;
+    font-size: 14px;
+    left: 234px;
+	top:-20px;
+    position: relative;
+    width: 400px;
+}
+
+/**********************************
+
+	Contact Import
+
+*********************************/
+
+
+#ImportContactContainer .selectBoxAcc {
+    background: url("/assets/register/select_box_provider.png") no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 28px;
+    position: relative;
+    top: 0;
+    width: 275px;
+}
+
+#ImportContactContainer .dropDownDivAcc {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CDE0E6;
+    color: #959292;
+    display: inline-block;
+    font-size: 13px;
+    margin-left: 0;
+    margin-top: -1px;
+    position: absolute;
+    width: 273px;
+    z-index: 500;
+}
+#ImportContactContainer .selectBoxAcc .selectDiv{
+    display:inline-block;
+    cursor:default;
+    font-size:13px;
+    color:#959292;
+    position:relative;
+    top:2px;
+    left:7px;
+    width:273px;
+    height:23px;
+    overflow:hidden;
+    padding-left: 0px;
+}
+#ImportContactContainer .dropDownDivAcc a{	
+    color:#959292;
+    display:block;
+    text-decoration:none;
+    padding:3px 0px 3px 3px;
+}
+#ImportContactContainer .dropDownDivAcc a:hover{
+    background:#73C3DD;
+    color:#ffffff;
+}
+
+#ImportContactContainer .textbox {
+    border: 1px solid #CDE0E6;
+    color: #444444;
+    display: inline-block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    height: 27px;
+	*height: 24px;
+    padding: 1px 4px 0;
+	*padding:6px 4px 0px 4px;
+    width: 235px;
+}
+#contact_container .headText{
+    color:#4aa3b6;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size:14px;
+    background:#f0f6f8;
+    border:1px solid #E9EDEE;
+    border-left:none;
+    border-right:none;
+    height:33px;
+}
+.contactNew .contentText{
+    color:#807e7e;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    font-size:12px;
+    border-bottom:1px solid #E2EAEC;
+    height:35px;
+}
+.contactNew .setBg1{
+    background:#ffffff;
+}
+.contactNew .setBg2{
+    background:#f6f8f7;
+}
+#contact_container_new .headText{
+    color:#4aa3b6;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size:14px;
+    background:#f0f6f8;
+    border:1px solid #E9EDEE;
+    border-left:none;
+    border-right:none;
+    height:33px;
+}
+/* Off state for a ARC checkbox */
+#contact_container_new .contactNew .altCheckboxOff {
+    display: inline-block;
+    background: url('/assets/provider_event_list/pro_checkbox_normal.png') no-repeat;
+    width:19px;
+    height:21px;
+    cursor: pointer;
+}
+/* On state for a ARC checkbox */
+#contact_container_new .contactNew .altCheckboxOn {
+    display: inline-block;
+    background: url('/assets/provider_event_list/pro_checkbox_selected.png')  no-repeat;
+    width:19px;
+    height:21px;
+    cursor: pointer;
+}
+
+
+
+@media \0screen {
+#contact_container .textbox{
+	padding:6px 4px 0px 7px;
+	height:21px;
+	width:532px;
+}
+.support_form .BrowserHidden {
+	color: #999999;
+	cursor: pointer;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	height: 19px;
+	left:-8px;
+	top: -14px;
+	-moz-opacity:0;
+	filter:alpha(opacity=0);
+	opacity:0;
+	position: relative;
+	width: 100px;
+	z-index: 2;
+}
+#ImportContactContainer .textbox {
+  padding:6px 4px 0px 7px;
+  height:21px;
+  width: 235px;
+}
+
+}
+
+  @media screen and (-webkit-min-device-pixel-ratio:0){
+.editContact .BrowserHidden {
+      left: 8px;
+      height:10px;
+      font-size:19px;
+      width:115px;
+      position:relative;
+      cursor:pointer;
+      -moz-opacity:0;
+      filter:alpha(opacity= 0);
+      opacity: 0;
+      display: inline-block;
+      z-index: 3;
+    }
+.editContact  .browse{
+      top:-16px;
+      cursor: pointer;
+      display: inline-block;
+      position:relative;
+      z-index: 2;
+    }
+	.support_form .BrowserHidden {
+	 	left: 12px;
+		top:-15px;
+		position:relative;
+		border:1px solid red;
+		height:11px;
+       font-size: 5px;
+	}
+.support_form .browse {
+    color: #5099AC;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Verdana,Geneva,Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    margin-left: 10px;
+    position: relative;
+    top: -32px;
+    width: 124px;
+    z-index: 1;
+}
+ #advanceSearchDiv{
+    margin-top:6px;
+	margin-right:25px;
+    position: relative;
+    width: 306px;
+/*    z-index: 1;*/
+	cursor:pointer;
+}
+  }
+ 
+/****************************
+
+   import and invite friends
+  
+  ***************************/
+  
+#checkout .checkoutLt{
+	float:left;
+	display:inline-block;
+}
+#checkout .centerArea{
+	margin:5px 15px 0 0;
+	border:1px solid #E8ECED;
+	border-bottom:none;
+}
+#checkout .checkout_top{
+	width:500px;
+	margin:0 auto;
+	margin-top:20px;
+	border1:1px solid red;
+}
+#checkout .set_style_1{
+	border:1px solid #E8ECED;
+	width:14px;
+	height:17px;
+	.height:14px;
+	background:#CCE9EF;
+	padding:0px 0px 0px 5px;
+	.padding:4px 0px 0px 5px;
+	margin-top: 3px;
+	/*-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-moz-border-radius-topleft: 0;
+	-webkit-border-top-left-radius: 0;
+	border-radius-topleft: 0;
+	-moz-border-radius-topright: 0;
+	-webkit-border-top-right-radius: 0;
+	border-radius-topright: 0;*/
+}
+#checkout .set_style_2{
+	border:1px solid #CDE0E6;
+	width:14px;
+	height:17px;
+	.height:14px;
+	padding:0px 0px 0px 5px;
+	.padding:4px 0px 0px 5px;
+	margin-top: 3px;
+}
+#checkout .number_1{
+	position:relative;
+	top:0px;
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #000000;
+	width:19px;
+	height:17px;
+}
+#checkout .chkout_ftSz12{
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #5099AC;
+}
+#checkout  .chkout_clr_ftSz12{
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #7F7F7F;
+}
+.friendsList{
+	border:1px solid #e1e2e4;
+	margin: 25px 0 20px 0;
+}
+.friendsList .selectAll{
+	background:#F1F6F9;
+	border-bottom:1px solid #e1e2e4;
+}
+.friendsList .selectAll span{
+	font-size:15px;
+	font-weight:bold;
+	color:#2B91AF;
+	padding-left:7px;
+}
+.friendsList .friendsListDivBg1{
+	background:#ffffff;
+	border-bottom:1px solid #E2EAEC;	
+}
+.friendsList .friendsListDivBg2{
+	background:#F9FBFA;
+	border-bottom:1px solid #E2EAEC;
+}
+.friendsList  .lfrdDiv{
+	width:410px;
+	padding-left:10px;
+	display:inline-block;
+}
+.friendsList .nameList{
+	padding-left:10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    font-size:13px;
+}
+.friendsList .nameList .cont1{
+	color:#000000;
+	padding-bottom:3px;
+}
+.friendsList .nameList .cont2{
+	color:#807e7e;
+}
+.friendsList .repeatStrip{
+	margin:-5px 5px 0 5px;
+	width:1px;
+	background:#E2E4E3 repeat;
+}
+.emptyContact{
+   border: 1px solid #ebebeb;   
+   padding: 30px 30px 20px 30px;
+   background: #ffffff;
+   text-align: center;
+   width: 480px;
+   margin: 20px auto 0px;
+}
+.emptyTxt{
+   font-size: 30px;
+   color: #4595AC;
+   font-family: Arial;
+   margin-bottom: 20px;
+}
+.inviteContactBT{
+   margin: 0px 10px 0px 40px;
+}
+  .importTopBG {
+    background: #EDF1F2;
+    color: #555756;
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+    width: 700px;
+    margin-bottom:10px;
+  }
+  .setImportWidth{	
+     margin: 0 auto 20px;
+    width: 409px;
+}
+
+/************* New Contact User (Jan 21) **************/
+
+.grp_name
+{
+   cursor: pointer;
+}
+.contactpadding
+{
+   padding: 2px;
+}
+.contactbrdr
+{
+   padding: 5px;
+   border: 1px solid #EDF8FC;
+}
+.contact_tablebdr
+{
+   padding: 2px;
+   background-color: #FFFFFF;
+   border: 1px solid #b9bebc;
+}
+.contact_chkbox
+{
+   margin-right: 10px;
+   position: relative;
+   top: 28px;
+}
+.scText
+{
+   position1: relative;
+   margin-top: 3px;
+}
+.txtbox_create
+{
+	border: 1px solid #CDE0E6;
+    color: #444444;
+    display: inline-block;
+    font-size: 12px;
+    height: 23px;
+    margin-left: -2px;
+    padding: 1px 2px 0;
+    width: 100px;
+}
+#friend_list_member,#group_list_member
+{
+height: 360px;
+overflow-y: auto;
+}
+
+/******************** Drop Down Style *******************/
+
+.contact_menu_style{
+   color:#5099AC;
+   border:1px solid #F6F8F7;
+   margin-left: 3px;
+}
+.contact_menu_style:hover{
+  color: #5099AC;
+  background-color:#E6F5F8;
+  border:1px solid #A9D3E1;
+  font-weight:bold;
+}
+.contact_menu_style ul li:hover ul{
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+.contact_menu_style ul{
+  text-align: left;
+  display: inline-block;
+  margin: 0;
+  /*padding:0px 4px 0px 0;*/
+  list-style: none;
+  right:0;
+}
+.contact_menu_style ul li ul{
+  padding: 0;
+  position: absolute;
+  top: 24px;
+  left: -1px;
+  width: 170px;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  background:#F6F8F7;
+  border:1px solid #A9D3E1;
+}
+.contact_menu_style ul li{  
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font-weight:bold;
+}
+.contact_menu_style ul li ul li{ 
+   display: block; 
+   color:#959292;
+   border:1px solid #F6F8F7;
+   font-weight:normal;
+   font-family:Arial, Helvetica, sans-serif;
+   font-size:13px;
+}
+.contact_menu_style ul li ul li a{ 
+   color:#959292;
+   text-decoration:none;
+}
+.contact_menu_style ul li ul li a:hover{ 
+   color:#F97C0E;
+   text-decoration:none;
+}
+.contact_menu_style ul li ul li:hover{ 
+   background:#F6F8F7; 
+   border:1px solid #F6F8F7;
+   font-family:Arial, Helvetica, sans-serif;
+   font-size:13px; color:#F97C0E; font-weight:normal;
+}
+.contactlist .contactImage
+{
+   background: none repeat scroll 0 0 #FBFDFE;
+   border: 1px solid #CDE0E6;
+   display: block;
+   height: 57px;
+   margin: 5px 25px 0 5px;
+   padding: 5px 5px 0;
+   width: 62px;
+}
+.contactlist .contactImage span{
+   color:#5AA3B6;
+   font-family:Arial, Helvetica, sans-serif;
+   font-size:13px;
+   background:#F2F5F6;
+   display:block;
+   text-align:center;
+   width:62px;
+   height:52px;
+}
+.contactlist .famNorHov{
+   margin-left: 64px;
+   margin-top: -15px;
+}
+.list
+{
+width: 300px !important;
+}
+.contact_tablebdr
+{
+width:193px;
+}
+#group-list
+{
+	height:100px;
+	overflow-y:auto;
+}
+.menupadding
+{
+	padding: 0px 5px;
+}
+#contact_user_index,#contact_list_member{
+display:inline-block;
+width:98%;
+}
+
+/*contact_user page inline css */
+
+<style type="text/css">
+  @-moz-document url-prefix() {
+     .popupContainer {
+         top: 5%;
+         position: fixed;
+     }
+  }
+  .setBg1 {
+    background: #ffffff;
+  }
+  .setBg2{
+    background:#f6f8f7;
+  }
+  .required {
+    color: red;
+    display: inline-block;
+    font-size: 13px;
+    left: 0;
+    position: relative;
+    top: 0;
+  }
+  .ui-autocomplete {max-height: 150px !important;overflow-y: auto !important; overflow-x: hidden !important;}
+
+  #txt_autocomplete .ui-autocomplete{
+    left: 263px !important; top: <%if params[:net] == "true"%>294px<%else%>289px<%end%> !important;width: 424px !important
+  }
+
+  #invite_email_autocomplete .ui-autocomplete{ width: 646px !important}
+
+  .ffdiv{
+    border-bottom: 1px solid #E8F0F2;
+  }
+  .ffmem{
+    border: 1px solid #e1e1e1;
+    height: 25px;
+    margin: 5px auto;
+    width: 428px;
+    padding: 8px 0px;
+    box-shadow:  0 0 4px #e1e1e1 inset;
+  }
+  .ffmemInTxt{
+    border: none medium;
+    color: #999999;
+    font-size: 13px;
+    vertical-align: text-top;
+    width: 392px;
+    padding: 0px 4px;
+    height: 20px;
+    font-family: Arial,Helvetica,sans-serif;
+  }
+  .ffmemseaBt{
+    position: relative;
+    top: 3px;
+  }
+  .friendListff{
+    overflow: auto;
+    height: 290px;
+    margin: 20px;
+    width: 95%;
+  }
+  .ffifTxt{
+    margin: 100px auto auto;
+    width: 385px;
+    padding: 20px 20px;
+    background: #EEF9FD;
+    font-size: 13px;
+    color: #5099AC;
+    font-family: Arial,Helvetica,sans-serif;
+    text-align: center;
+    border: 1px solid #D3E1E4;
+  }
+
+  .top_social_icon .invites {
+    height: 100px;
+    width: 100px;
+    border: 3px solid red;
+    float: left;
+
+  }
+  .centerCont{
+    height: 150px;
+  }
+
+
+
+  .invite_friend{
+    width: 884px;
+    height: 915px;
+    border: 1px solid #e1e1e1;
+  }
+  .invite_friend_header{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 10px 0px;
+    color: #5099ac;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .clear{
+    clear: both;
+  }
+  .invite_friend_success{
+    width: 598px;
+    height: 90px;
+    background: #f9fbfe;
+    margin: 0 auto;
+    border: 1px solid #ebebeb;
+  }
+  .success_text{
+    text-align: center;
+    color: #3b8da3;
+    font-family: arial;
+    font-size: 20px;
+    padding: 15px 0px 0px 0px;
+    text-transform: capitalize;
+  }
+  .success_sec_text{
+    text-align: center;
+    color: #4b4a4a;
+    font-family: arial;
+    font-size: 16px;
+    padding: 10px 0px 0px 0px;
+  }
+  .ajax_show_hide{
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+  }
+  .invite_import_img_div{
+    width: 796px;
+    height: 525px;
+    border: 1px solid #e1eef2;
+    margin: 0 auto;
+  }
+  .invie_inner_img{
+    width: 796px;
+    border-bottom: 1px solid #ebebeb;
+  }
+  .inner_imgs{
+    width: 500px;
+    height: 130px;
+
+    margin: 0 auto;
+  }
+  .single_img{
+    width: 165px;
+    float: left;
+    /*border: 1px solid red;*/
+    height: 130px;
+    cursor: pointer;
+
+  }
+  .selct_borders{
+    border-bottom: 3px solid red;
+  }
+
+  #invite_email_autocomplete .ui-autocomplete {
+    width:524px !important;
+  }
+  .invite_normal{
+    background: url("/assets/fam_networks/invite.png") center no-repeat;
+    width: 100%;
+    height: 100px;
+  }
+  .import_normal{
+    background: url("/assets/fam_networks/import.png") center no-repeat;
+    width: 100%;
+    height: 100px;
+  }
+  .find_normal{
+    background: url("/assets/fam_networks/find_famt_search.png") center no-repeat;
+    width: 100%;
+    height: 100px;
+  }
+  .invite_normal_select{
+    background: url("/assets/fam_networks/invite_select.png") center no-repeat;
+    width: 100%;
+    height: 100px;
+  }
+  .import_normal_select{
+    background: url("/assets/fam_networks/import_select.png") center no-repeat;
+    width: 100%;
+    height: 100px;
+  }
+  .find_normal_select{
+    background: url("/assets/fam_networks/find_famt_search_select.png") center no-repeat;
+    width: 100%;
+    height: 100px;
+  }
+  .text_span{
+    color: #5099ac;
+    font-family: arial;
+    font-size: 14px;
+    /*text-transform: capitalize;*/
+    text-align: center;
+
+  }
+  .text_span_select{
+    color: #ff3737;
+    font-family: arial;
+    font-size: 14px;
+    /*text-transform: capitalize;*/
+    text-align: center;
+  }
+  .discountdollar{
+    width: 568px;
+    height: 20px;
+    background: #eef9fd;
+    border: 1px solid #d3e1e4;
+    font-family: arial;
+    font-size: 12px;
+    color: #555454;
+    margin: 20px auto;
+    text-align: center;
+    padding: 17px 0px;
+  }
+  .bold_txt{
+    color: #ff0000;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .enter_detail{
+    width: 522px;
+    height: 150px;
+
+    margin: 0 auto;
+  }
+  .text_header{
+    width: 100%;
+    height: 20px;
+    color: #5a5757;
+    font-size: 14px;
+    text-transform: capitalize;
+    padding: 8px 0px 0px 0px;
+  }
+  .input_fields input[type="text"]{
+    width: 522px;
+    height: 34px;
+    border: 1px solid #e1e1e1;
+    color: #999999;
+    padding: 0px 0px 0px 5px;
+    font-family: arial;
+    font-size: 13px;
+    box-shadow: inset 0px 0px 4px #e1e1e1;
+  }
+  .input_fields textarea{
+    width: 522px;
+    height: 154px;
+    border: 1px solid #e1e1e1;
+    color: #999999;
+    padding: 5px 0px 0px 5px;
+    font-family: arial;
+    font-size: 13px;
+    box-shadow: inset 0px 0px 4px #e1e1e1;
+  }
+  .button_classes{
+    width: 796px;
+    height: 50px;
+    border: none;
+    margin: 20px auto;
+    display: none;
+
+  }
+  #find_friends {
+    width: 796px ;
+
+  }
+  #inviteAccount3{
+    width: 796px ;
+    border-bottom: 1px dashed #ebebeb;
+    height: 62px;
+    margin-top:20px;
+  }
+  .ffdivs{
+    margin: 0 auto;
+    width: 80%;
+  }
+  .checkoutLt11{
+    background: url("/assets/checkout/line.png") repeat-x;
+    width: 350px;
+    height: 
+  }
+  .spacerdiv_30{
+    width: 100%;
+    height: 30px;
+    display: none;
+  }
+</style>

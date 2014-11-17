@@ -1,0 +1,28 @@
+ <table border="1px">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Show</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+<%i=1%>
+<% @users.each do |user| %>
+<div id="udrow_<%=user.id%>">
+  <tr id="urow_<%=user.id%>" style="border:1px solid red">
+    <td><%= user.name %></td>
+    <td><%= user.email %></td>
+    <td><%= user.phone %></td>
+    <td><div style="cursor:pointer;" onclick="usershow('<%=user.id%>')">Show</div>
+      <%#= link_to 'Show', user %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><div style="cursor:pointer;" onclick="userdelete('<%=user.id%>')">Destroy</div>
+      <%#= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+  <div>
+    <%i=i+1%>
+<% end %>
+</table>
+<div><%= will_paginate @users %><div>
+

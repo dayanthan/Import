@@ -1,0 +1,47 @@
+<div class="home" align="center">
+<h1>Contacts</h1>
+<%=session[:user].id%>
+<%if !@contacts.nil?%>
+<table border="1px">
+  <tr>
+    <th>Contact name</th>
+    <th>Contact email</th>
+    <th>Show</th>
+    <th>Edit</th>
+    <th>Destroy</th>
+  </tr>
+
+<% @contacts.each do |contact| %>
+  <tr>
+    <td><%= contact.contact_name %></td>
+    <td><%= contact.contact_email %></td>
+    <td><%= link_to 'Show', contact %></td>
+    <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
+    <td><%= link_to 'Destroy', contact, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<%end%>
+<%= link_to 'New Contact', new_contact_path %>
+<br>
+
+    <div>
+        <div>import<div>
+            <div onclick="pop_gmail_imports();" style="cursor:pointer;">Gmail</div>
+            <div onclick="pop_import_facebook();" style="cursor:pointer;">Facebook</div>
+    </div>
+</div>
+<script type="text/javascript">
+
+ function pop_gmail_imports(){
+      popupWindow = window.open('../contacts/gmail','name','width=910,height=810,scrollbars=yes');
+      // popupWindow = window.open('../contacts/gmail','name','width=930,height=650,scrollbars=yes');
+      return false;
+    }
+function pop_import_facebook(){
+      popupWindow = window.open('../contacts/facebook','name','width=910,height=810,scrollbars=yes');
+      return false;
+    }
+</script>

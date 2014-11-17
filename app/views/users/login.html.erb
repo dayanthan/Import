@@ -1,0 +1,22 @@
+<%form_tag('/users_login'), :method=>'get'%>
+  <div class="field">
+    <%= text_field_tag "email" %>
+  </div>
+  <div class="field">
+    <%= text_field_tag "password" %>
+  </div>
+   </div>
+  <div class="actions">
+    <%= submit_tag 'Submit' %>
+  </div>
+
+<% end %>
+<script type="text/javascript">
+// function checkvalid () {
+//   var name= $("#user_name").val();
+//   var email= $("#user_email").val();
+//   var phone= $("#user_phone").val();
+//   alert(name+"--"+email+"--"+phone);
+//   // body...
+// }
+</script>
