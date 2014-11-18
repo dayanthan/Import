@@ -9,8 +9,10 @@ Network::Application.routes.draw do
 
   get "/contacts/facebook/callback" => "contacts#facebook_contact_list"
   get "/contacts/gmail/callback" => "contacts#contact_list" 
-  get "/contacts/failure" => "contact_users#contact_fail"
-  match "fb_invite"=>"contact_users#fb_invite"
+  get "/contacts/failure" => "contacts#contact_fail"
+  match "fb_invite"=>"contacts#fb_invite"
+  match '/add_contact_success' => 'contacts#add_contact_success' 
+  match '/facebook_contact_success' => 'contacts#facebook_contact_success' 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

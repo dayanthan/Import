@@ -2,9 +2,9 @@ class ContactsController < ApplicationController
   # GET /contacts
   # GET /contacts.json
   def index
-    p session[:user].id
+    p session[:user].id if !session[:user].nil?
     p "99999"
-    @contacts = Contact.where("user_id=?",session[:user].id)
+    @contacts = Contact.where("user_id=?",session[:user].id ) if !session[:user].nil?
 
     respond_to do |format|
       format.html # index.html.erb
@@ -100,5 +100,51 @@ class ContactsController < ApplicationController
 
   def contact_list
     @contacts = request.env['omnicontacts.contacts']
+  end
+
+   def add_contact_success
+    if !params[:subList].nil?
+      contact_type = cookies[:from]
+      @c_old =[]
+      @c_id =[]
+      @sublist = []
+      @sublist << params[:subList]
+      @s_value = params[:subList].count
+      @cuser = User.where("id = ? ", params[:user_id]).last
+      @pre_con=Contact.where("user_id = ? ", params[:user_id])
+      params[:subList].each do |co|
+        @val = co.split("^")
+        @old_email = User.find_by_email(@val[0])
+        @old_contact = Contact.find_by_contact_email_and_user_id(@val[0],params[:user_id])
+        @sameuser = params[:user_email]==@val[0]
+        if !@old_contact && !@sameuser
+          @friend = Contact.new
+          @friend.contact_email =@val[0]
+          @friend.contact_name =@val[1]
+          @friend.user_id = params[:user_id]
+          @friend.contact_from = "gmail"
+          @friend.contact_type= @old_email ? "member" : "non_member"
+          @friend.app_user_id = @old_email.user_id if !@old_email.nil? && !@old_email.user_id.nil?
+          @friend.save
+          p @friend
+        else
+          @c_old << @old_contact
+        end
+        #group_old_email= @c_old.collect{|f|f["contact_email"]}.join(',')
+        @g1 =@c_old.count
+        @group = @s_value - @g1
+      end
+      @cur_con=Contact.find(:all,:conditions=>["user_id = ? ", params[:user_id]])
+      @rm_con=@cur_con - @pre_con if !@cur_con.nil? && !@pre_con.nil?
+      @contact=@rm_con + @c_old
+      @contact.each do |c|
+        @c_id<< c.id if !c.nil?
+      end
+      cookies[:all_con]=@c_id
+      respond_to do |format|
+        session[:user] = @cuser
+        format.html {render :template => 'contacts/add_contact_success', :layout => false}
+      end
+    end
   end
 end

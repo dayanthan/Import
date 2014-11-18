@@ -45,8 +45,8 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     respond_to do |format|
       if @user.save
-        @users = User.all.paginate(:order =>"name ASC" ,:page => params[:page], :per_page => 5)
-        format.js 
+        #@users = User.all.paginate(:order =>"name ASC" ,:page => params[:page], :per_page => 5)
+        #format.js 
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render json: @user, status: :created, location: @user }
       else

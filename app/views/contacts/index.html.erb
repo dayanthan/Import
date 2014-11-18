@@ -1,6 +1,6 @@
 <div class="home" align="center">
 <h1>Contacts</h1>
-<%=session[:user].id%>
+<%=session[:user].id if !session[:user].nil?%>
 <%if !@contacts.nil?%>
 <table border="1px">
   <tr>
@@ -24,24 +24,48 @@
 
 <br />
 <%end%>
-<%= link_to 'New Contact', new_contact_path %>
+<%#= link_to 'New Contact', new_contact_path %>
+<div onclick="pop_new();" style="cursor:pointer;">New Contact</div>
 <br>
 
     <div>
         <div>import<div>
             <div onclick="pop_gmail_imports();" style="cursor:pointer;">Gmail</div>
             <div onclick="pop_import_facebook();" style="cursor:pointer;">Facebook</div>
+            <%#=user=User.where("id=?",session[:user].id).last%>
+            <%#=user.contacts.last.inspect%>
     </div>
 </div>
 <script type="text/javascript">
 
+
+
+function pop_new(){
+  <% if !session[:user].nil?%>
+      window.location.href="/contacts/new"
+      return false;
+      <%else%>
+        alert("you need to login");
+        window.location.href="/"
+      <%end%>
+    }
  function pop_gmail_imports(){
+  <% if !session[:user].nil?%>
       popupWindow = window.open('../contacts/gmail','name','width=910,height=810,scrollbars=yes');
       // popupWindow = window.open('../contacts/gmail','name','width=930,height=650,scrollbars=yes');
       return false;
+      <%else%>
+        alert("you need to login");
+        window.location.href="/"
+      <%end%>
     }
 function pop_import_facebook(){
+  <% if !session[:user].nil?%>
       popupWindow = window.open('../contacts/facebook','name','width=910,height=810,scrollbars=yes');
       return false;
+      <%else%>
+      alert("you need to login");
+      window.location.href="/"
+      <%end%>
     }
 </script>

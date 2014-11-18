@@ -41,10 +41,10 @@ document.getElementById('check_box_alert').style.display="none";
       <div class="innerContainer">
         <div class="headTab">
           <div class="heading">
-            <div class="headCont">Import Friends</div>
+            <div class="headCont" style="margin-top: 50px;position: absolute;margin-left: 40%;font-weight: bold;">Import Friends</div>
           </div>
                    <div class="closeButton">
-            <a href="javascript:void(0)" onClick="closepopup()" title=""> <img src="/assets/global/pop_up/button_close.png" alt="" width="15" height="15" /> </a>
+            <a href="javascript:void(0)" onClick="closepopup()" title="Close" style="margin-top: 50px;margin-left: 95%;position: absolute;"> <img src="/assets/button_close.png" alt="" width="15" height="15" /> </a>
           </div>
         </div>   
         <div id="contact_list" class="centerCont contactNew">
@@ -52,7 +52,7 @@ document.getElementById('check_box_alert').style.display="none";
 <p align="center" style="font-family:arial; font-size:18px; color:#000;">Please select at least one friend</p>
 <div align="center" style="margin-top:40px;">
     <input type="hidden" value="40," id="to_delete">
-    <a href="javascript:void(0)" title="" onclick="closepopup_check()" ><img alt="" src="/assets/contact/ok_button.png"></a>
+    <a href="javascript:void(0)" title="" onclick="closepopup_check()" ><img alt="" src="/assets/ok_button.png"></a>
      
   </div>
 
@@ -93,7 +93,8 @@ document.getElementById('check_box_alert').style.display="none";
     <div class="selectAll"><div style="padding:10px;" ><input type="checkbox" name="checkbox_contact" id="parent_checkbox" onclick="importAll()" /><span onclick="importAll()">Select All</span></div></div>
  
     <div  style="height:525px; overflow-y:auto; overflow-x:hidden;">            
-    <input type="hidden" name="from" id="from" value="<%=session[:user].id%>">
+    <input type="text" name="user_id" id="user_id" value="<%=session[:user].id%>">
+    <input type="text" name="user_email" id="user_email" value="<%=session[:user].email%>">
                  
             <%i=1 %>
                 <%(0..@contacts.length.to_i).step(2) do |n| %>
@@ -263,5 +264,20 @@ document.getElementById('c_list').style.display="none";
    
     });
 
-
+var checked = false;
+function importAll () {
+if (checked == false){checked = true}else{checked = false}
+for (var i = 0; i < document.getElementById('contact_form').elements.length; i++) {
+document.getElementById('contact_form').elements[i].checked = checked;
+if(document.getElementById('parent_checkbox').checked == true){
+  checked = true;
+}
+else{
+  checked = false;
+}
+}
+}
+function unselect(){
+    document.getElementById('parent_checkbox').checked =false;
+}
 </script>

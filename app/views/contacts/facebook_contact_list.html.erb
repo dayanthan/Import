@@ -32,10 +32,10 @@ function closepopup() {
       <div class="innerContainer">
         <div class="headTab">
           <div class="heading">
-            <div class="headCont">Import Friends</div>
+            <div class="headCont" style="margin-top: 50px;position: absolute;margin-left: 40%;font-weight: bold;">Import Friends</div>
           </div>
           <div class="closeButton">
-            <a href="javascript:void(0)" onClick="closepopup()" title=""> <img src="/assets/global/pop_up/button_close.png" alt="" width="15" height="15" /> </a>
+            <a href="javascript:void(0)" onClick="closepopup()" title="Close" style="margin-top: 50px;margin-left: 95%;position: absolute;"> <img src="/assets/button_close.png" alt="" width="15" height="15" /> </a>
           </div>
         </div>
   <div id="contact_list" class="centerCont contactNew">
@@ -43,7 +43,7 @@ function closepopup() {
             <p align="center" style="font-family:arial; font-size:18px; color:#000;">Please select at least one friend</p>
           <div align="center" style="margin-top:40px;">
             <input type="hidden" value="40," id="to_delete">
-              <a href="javascript:void(0)" title="" onclick="closepopup_check()" ><img alt="" src="/assets/contact/ok_button.png"></a>
+              <a href="javascript:void(0)" title="" onclick="closepopup_check()" ><img alt="" src="/assets/ok_button.png"></a>
           </div>
         </div>
 
@@ -237,5 +237,20 @@ function closepopup() {
    
     });
 
-
+var checked = false;
+function importAll () {
+if (checked == false){checked = true}else{checked = false}
+for (var i = 0; i < document.getElementById('contact_form').elements.length; i++) {
+document.getElementById('contact_form').elements[i].checked = checked;
+if(document.getElementById('parent_checkbox').checked == true){
+  checked = true;
+}
+else{
+  checked = false;
+}
+}
+}
+function unselect(){
+    document.getElementById('parent_checkbox').checked =false;
+}
 </script>
