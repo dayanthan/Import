@@ -24,7 +24,6 @@ gem 'jquery-rails'
 
 group :development, :test do
   gem 'rspec-rails'
-  gem "rspec-rails"
   gem "remarkable_activerecord"
   gem "shoulda"
   gem "rspec-collection_matchers"
